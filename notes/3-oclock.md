@@ -105,7 +105,7 @@ func TestOClock_Body(t *testing.T) {
   expected :=  "2017-02-14 21:40"
   result := w.Body.String()
 	if result != expected {
-		t.Errorf("Expected %q Result %q", expected,result)
+		t.Errorf("Expected %q Result %q", expected, result)
 	}
 
 }
