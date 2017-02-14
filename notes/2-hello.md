@@ -7,7 +7,9 @@ mkdir -p $GOPATH/src/hello
 ```
 Open editor
 
+```bash
 atom $GOPATH/src/hello
+```
 
 ##Test
 
@@ -48,7 +50,9 @@ func main() {
 }
 ```
 
+```bash
 go test -v hello
+```
 
 ```bash
 === RUN   ExampleHello
@@ -65,7 +69,9 @@ go install hello
 
 ##Run
 
+```bash
 hello
+```
 
 
 Ship It!
