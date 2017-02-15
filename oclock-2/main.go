@@ -15,7 +15,7 @@ type clock struct {
 type jsonTime time.Time
 
 func (t jsonTime) MarshalJSON() ([]byte, error) {
-	return []byte(time.Time(t).Format("2006-01-02T15:04")), nil
+	return []byte(time.Time(t).Format(`"2006-01-02T15:04"`)), nil
 }
 
 //OClock Gives you the time of day
