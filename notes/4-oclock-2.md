@@ -47,7 +47,7 @@ func OClock(w http.ResponseWriter, r *http.Request) {
 
 	cJSON, err := json.Marshal(c)
 	if err != nil {
-		fmt.Errorf("Can't marshal time - %v", err.Error())
+		fmt.Printf("Can't marshal time - %v\n", err.Error())
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
